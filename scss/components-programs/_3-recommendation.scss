@@ -1,0 +1,50 @@
+.recommendation{
+    margin: 0 1rem;
+    box-shadow: $shadow-b;
+    background-color: white;
+    padding: 1.5rem 0;
+    
+    h2{
+        text-align: center;
+        color: $black;
+        font-weight: 400;
+        font-size: $font-3;
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid #e0e0e0;
+        margin: 0 1.5rem;
+    }
+
+    .container{
+        padding: 0 1.5rem;
+        
+        .flex{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            margin-top: 1.5rem;
+            i{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                transition: $trans-3;
+                color: white;
+                background-color: $black;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            i:hover{
+                background-color: $first-color;
+            }
+
+            p{
+                line-height: 1.7rem;
+                color: $black;
+                text-align: center;
+            }
+        }
+    }
+
+}

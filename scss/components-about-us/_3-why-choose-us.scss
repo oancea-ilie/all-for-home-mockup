@@ -1,0 +1,58 @@
+.why-choose-us{
+
+    h1{
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        color: $black;
+    }
+    .line{
+        height: 1px;
+        width: 30%;
+        margin: 0 auto;
+        background-color: $second-color;
+        margin-bottom: 1.5rem;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 1rem;
+        .flex{
+            background-color: rgba(236, 235, 235, 0.507);
+            border-radius: 5px;
+            box-shadow: $shadow-b;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-bottom: $border-light;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            i{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: $black;
+                font-size: 2rem;
+                color: white;
+            }
+            h2{
+                padding-top: 1rem;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            p{
+                text-align: center;
+                padding-top: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}

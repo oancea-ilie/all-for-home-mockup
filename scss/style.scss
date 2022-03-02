@@ -1,0 +1,74 @@
+// utilities
+@import 
+'utilities/variables',
+'utilities/mixins';
+
+//base
+@import 
+'base/reset',
+'base/base';
+
+
+// layout
+@import 
+'layout/header',
+'layout/header-home',
+'layout/main',
+'layout/footer',
+'layout/wrapper',
+'layout/login',
+'layout/register',
+'layout/main-recipes',
+'layout/main-product-view',
+'layout/main-home',
+'layout/main-programs',
+'layout/main-about';
+
+// main components
+@import
+'components-main/1-nav',
+'components-main/3-hero',
+'components-main/4-how-it-works',
+'components-main/5-menu',
+'components-main/6-goal',
+'components-main/7-calculator',
+'components-main/8-program',
+'components-main/9-team',
+'components-main/10-footer-header',
+'components-main/11-footer-body',
+'components-main/12-footer-social',
+'components-main/13-footer-copyright';
+
+// recipes
+@import 
+'components-recipes/1-recipes-hero',
+'components-recipes/2-sort-container',
+'components-recipes/3-recipes-container',
+'components-recipes/4-pages',
+'components-recipes/5-recipes-category',
+'components-recipes/6-recipes-filter';
+
+//home registrated
+@import 
+'components-home/1-home-hero-home',
+'components-home/2-home-why-us',
+'components-home/3-home-view-recipes',
+'components-home/4-home-top-categories',
+'components-home/5-home-last-orders',
+'components-home/6-home-calculator',
+'components-home/7-home-select-program',
+'components-home/8-home-select-goal';
+
+// programs
+@import
+'components-programs/1-programs-hero',
+'components-programs/2-programs',
+'components-programs/3-recommendation';
+
+// about us
+
+@import 
+'components-about-us/1-about-hero',
+'components-about-us/2-about-vision',
+'components-about-us/3-why-choose-us',
+'components-about-us/4-about-team';

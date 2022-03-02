@@ -1,0 +1,24 @@
+.footer-copyright{
+    padding: 1rem 1.5rem;
+    background-color: $first-color-h;
+
+    p{
+        text-align: center;
+        font-size: 0.9rem;
+        padding-bottom: 0.5rem;
+
+        a{
+            transition: $trans-3;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: white;
+        }
+        a:hover{
+            color: $second-color;
+        }
+    }
+    p:last-of-type{
+        padding-bottom: 0;
+    }
+    
+}

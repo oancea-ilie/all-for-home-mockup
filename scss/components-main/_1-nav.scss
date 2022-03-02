@@ -1,0 +1,49 @@
+.nav{
+    position: absolute;
+    top: 4.7rem;
+    right: -100%;
+    opacity: 0;
+    transition: 0.5s all;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 1rem;
+    a{
+        color: $black;
+        display: block;
+        padding-bottom: 1rem;
+        text-align: center;
+        transition: $trans-3;
+    }
+    a:hover{
+        color: $second-color;
+    }
+    a:last-of-type{
+        padding: 0.7rem 0;
+        color: white;
+    }
+    a:last-of-type:hover{
+        color: white;
+    }
+
+    @include mq("md"){
+        opacity: 1;
+        min-width: 460px;
+        position: unset;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        gap: 1rem;
+        a{
+            font-size: $font-5;
+            padding: 0;
+        }
+        a:last-of-type{
+            padding: 0.5rem 1.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+}

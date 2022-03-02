@@ -1,0 +1,38 @@
+.calculator{
+    padding: 0 1.5rem;
+    color: $black;
+
+    .container{
+        padding-bottom: $space-3;
+        
+        p{
+            padding-top: 0.5rem;
+        }
+
+        input[type=text],
+        input[type=number]{
+            width: 100%;
+            border-radius: 0;
+            border: 1px solid rgba(56, 56, 56, 0.315);
+        }
+        input[type=radio]{
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+            margin-bottom: 1rem;
+        }
+        input:focus{
+            border: none;
+            background-color: $second-color;
+        }
+
+        a{
+            margin-top: 1rem;
+            padding: 0.7rem 0;
+            text-align: center;
+            width: 100%;
+        }
+        .corectie{
+            padding-top: 0;
+        }
+    }
+}

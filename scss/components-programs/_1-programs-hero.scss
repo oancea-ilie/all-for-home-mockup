@@ -1,0 +1,23 @@
+.programs-hero{
+    margin-top: 4.7rem;
+    height: 200px;
+    background-image: url(../img/programs-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1{
+        color: white;
+        margin:0;
+        width: 100%;
+        font-size: $font-2;
+        background-color: #58b8208f;
+        padding: 0.5rem 0;
+    }
+    
+}

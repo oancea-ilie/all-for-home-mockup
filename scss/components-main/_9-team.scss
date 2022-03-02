@@ -1,0 +1,57 @@
+.team{
+    padding: 0 1.5rem;
+    color: $black;
+
+    p{
+        font-size: $font-5;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .container{
+        padding-bottom: $space-3;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        .card{
+            transition: $trans-3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin-top: 1rem;
+                border-radius: 50%;
+                border: 1px solid $first-color;
+                margin-bottom: 0.5rem;
+            }
+
+            h3{
+                margin-bottom: 0.5rem;
+                text-align: center;
+                color: $first-color;
+                font-weight: 400;
+            }
+
+            p{
+                margin-bottom: 1rem;
+            }
+        }
+
+        .card:hover{
+            
+            box-shadow: $shadow-2;
+            background-color: $first-color;
+
+            img{
+                border: 2px solid white;
+            }
+            h3{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+        }
+    }
+}

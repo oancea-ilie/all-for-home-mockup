@@ -1,0 +1,43 @@
+.about-vision{
+    margin: 0 1rem;
+    margin-top: 2rem;
+    img{
+        border-radius: 5px;
+        box-shadow: $shadow-b;
+        margin-bottom: 1rem;
+    }
+
+    h1{
+        text-transform:uppercase;
+        text-align: start;
+        margin: 0;
+        font-weight: 500;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        color: $first-color;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        .flex{
+            margin-bottom: 1rem;
+            box-shadow: $shadow-b;
+            h2{
+                font-size: 1.3rem;
+                font-weight: 400;
+                background-color: $second-color;
+                border-radius: 5px 5px 0 0;
+                color: white;
+                padding: 0.4rem;
+            }
+
+            p{
+                line-height: 1.7rem;
+                font-size: 1rem;
+                padding: 0.7rem;
+                border: $border-light;
+            }
+        }
+    }
+}

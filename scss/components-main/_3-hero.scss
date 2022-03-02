@@ -1,0 +1,37 @@
+.hero{
+    background-image: url(../img/hero-foto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: $space-3 $space-2;
+    padding-bottom: $space-3;
+    margin-top: 4.7rem;
+
+    h1{
+        line-height: 1.9rem;
+        font-size: $font-2;
+        span{
+            font-size: $font-2;
+            color: $first-color;
+        }
+    }
+    p{
+        font-size: $font-4;
+        line-height: 1.4rem;
+        margin-top: $space-0;
+        width: 220px;
+    }
+
+    a{
+        transition: $trans-3;
+        font-weight: 300;
+        margin-top: $space-1;
+        text-align: center;
+        width: 130px;
+        padding: $space-0 0;
+    }
+    
+}

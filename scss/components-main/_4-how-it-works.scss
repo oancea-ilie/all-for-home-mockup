@@ -1,0 +1,39 @@
+.how-it-works{
+    padding: 0 1.5rem;
+    color: $black;
+
+    .container{
+        padding-bottom: $space-3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: $space-2;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            img{
+                width: 70px;
+            }
+
+            h3{
+                font-size: $font-4;
+                padding-top: $space-1;
+            }
+            .corectie{
+                padding-top: 0.3rem;
+            }
+
+            p{
+                padding-top: $space-0;
+                text-align: center;
+                font-size: $font-5;
+                line-height: 1.4rem;
+            }
+
+        }
+        
+    }
+}

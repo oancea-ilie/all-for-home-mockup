@@ -1,0 +1,36 @@
+.goal{
+    padding: 0 1.5rem;
+    color: $black;
+
+    .container{
+        padding-bottom: $space-3;
+        display: grid;
+        grid-gap: $space-2;
+        
+        .card{
+            cursor: pointer;
+            transition: $trans-3;
+            border: 1px solid $first-color;
+            padding: 0.5rem;
+            color: $first-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $black;
+            img{
+                width: 30px;
+                margin-right: 0.7rem;
+                margin-left: 1rem;
+            }
+            p{
+                margin-top: 0.2rem;
+                font-size: $font-5;
+                width: 100px;
+            }
+
+        }
+        .card:hover{
+            background-color: white;
+        }
+    }
+}

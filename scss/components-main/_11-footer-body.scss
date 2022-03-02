@@ -1,0 +1,28 @@
+.footer-body{
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    border-bottom: 1px solid white;
+        .col{
+            display: flex;
+            flex-direction: column;
+            h3{
+                font-size: $font-5;
+                padding-bottom: 0.5rem;
+            }
+
+            a{
+                transition: $trans-3;
+                color: white;
+                font-weight: 300;
+                padding-bottom: 0.2rem;
+                font-size: $font-5;
+
+            }
+            a:hover{
+                color: $second-color;
+            }
+            
+        }
+}

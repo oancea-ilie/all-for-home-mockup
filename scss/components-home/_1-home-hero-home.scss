@@ -1,0 +1,41 @@
+.home-hero-wrapper{
+    background-image: url(../img/discount.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-home{
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: $space-3 $space-2;
+    padding-bottom: $space-3;
+    margin-top: 4.7rem;
+    h1{
+        line-height: 1.9rem;
+        font-size: $font-2;
+
+        .discount{
+            color: $first-color;
+        }
+        span{
+            font-size: $font-2;
+        }
+    }
+    p{
+        font-size: $font-4;
+        line-height: 1.4rem;
+        margin-top: $space-0;
+        width: 220px;
+    }
+
+    a{
+        transition: $trans-3;
+        font-weight: 300;
+        margin-top: $space-1;
+        text-align: center;
+        width: 130px;
+        padding: $space-0 0;
+    }
+}

@@ -1,0 +1,28 @@
+.pages{
+    margin: 0 1rem;
+    box-shadow: $shadow-b;
+    margin-top: 2rem;
+    display: flex;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 0;
+    a{
+        margin-right: 0.5rem;
+        padding: 0.4rem 0.7rem;
+        border-radius: 3px;
+        background-color: $black;
+        color: white;
+        font-size: $font-5;
+        transition: $trans-3;
+    }
+    a:hover{
+        background-color: $first-color;
+    }
+    .active{
+        background-color: $first-color;
+    }
+    a:last-of-type{
+        margin-right: 0;
+    }
+}

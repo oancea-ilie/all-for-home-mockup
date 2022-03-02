@@ -1,0 +1,46 @@
+.menu{
+    padding: 0 1.5rem;
+    color: $black;
+
+    .container{
+        padding-bottom: $space-3;
+        display: grid;
+        grid-gap: $space-1;
+        
+        .card{
+            box-shadow: $shadow-1;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s all;
+            cursor: pointer;
+            
+            p{
+                background-color: #4da01da1;
+                width: 100%;
+                text-align: center;
+                padding: 0.5rem 1rem;
+                color: white;
+                font-size: $font-4;
+                font-weight: 500;
+            }
+        }
+        .card:hover{
+            transform: scale(1.05);
+        }
+        .breakfast{
+            background-image: url(../img/breakfast.jpg);
+        }
+        .lunch{
+            background-image: url(../img/lunch.jpg);
+        }
+        .dinner{
+            background-image: url(../img/dinner.jpg);
+        }
+    }
+      
+}

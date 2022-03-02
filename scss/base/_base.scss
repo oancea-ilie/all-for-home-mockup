@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    a{
+        text-decoration: none;
+    }
+
+    .link{
+        background-color: $first-color;
+        transition: $trans-3;
+        color: white;
+        display: inline-block;
+        padding: $space-0 $space-2;
+    }
+    .link:hover{
+        background-color: $second-color;
+    }
+    button{
+        border-radius: $round-1;
+        background-color: $first-color;
+        margin: $space-0 0;
+        display: inline-block;
+        transition: $trans-1;
+        outline: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: $space-0 $space-2;
+    }
+    button:hover{
+        background-color: $first-color-h;
+    }
+    input{
+        transition: $trans-1;
+        margin: $space-0 0;
+        border-radius: $round-1;
+        outline: none;
+        border: 1px solid $first-color;
+        padding: $space-light $space-1;
+    }
+    input:focus{
+        border: 2px solid $first-color;
+    }
+    img, svg{
+        max-width: 100%;
+    }
+    h1{
+        font-size: $font-1;
+        margin: 0;
+    }
+    h2{
+        font-size: $font-2;
+    }
+    h3, h4, h5, h6, p, span, a, button, input{
+        font-size: $font-4;
+    }
+    .sub-title{
+        font-weight: 400;
+        font-size: $font-3;
+        margin: $space-3 0;
+        margin-bottom: $space-0;
+        text-align: center;
+    }
+
+
+    // facute special
+    .border{
+        border-bottom: 1px solid rgba(78, 78, 78, 0.109);
+    }
+
+    .border-bottom{
+        height: 1px;
+        width: 30px;
+        background-color: $second-color;
+        margin: 0 auto;
+        margin-bottom: $space-3;
+    }
+}

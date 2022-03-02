@@ -1,0 +1,19 @@
+.footer-social{
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i{
+        margin-right: 0.5rem;
+        cursor: pointer;
+        transition: $trans-3;
+        font-size: $font-4;
+    }
+    i:last-of-type{
+        margin-right: 0;
+    }
+    i:hover{
+        color: $second-color;
+    }
+}
