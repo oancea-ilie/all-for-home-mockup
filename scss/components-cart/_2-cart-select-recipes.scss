@@ -1,0 +1,57 @@
+.cart-select-recipes{
+    margin: 0 1rem;
+    margin-top: 2rem;
+    box-shadow: $shadow-b;
+    background-color: white;
+    h1{
+        background-color: $first-color;
+        font-size: $font-3;
+        color: white;
+        text-align: center;
+        padding: 0.8rem 1rem;
+        font-weight: 500;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card-recipes{
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50px;
+            }
+            img:last-of-type{
+                margin-right: 0;
+            }
+            .line{
+                height: 7px;
+                width: 50px;
+                background-color: rgba(128, 128, 128, 0.582);
+                border-radius: 10px;
+                margin-left: 0.3rem;
+            }
+            .corectie{
+                margin-left: -0.3rem;
+            }
+        }
+        a{
+            margin-top: 1.5rem;
+            padding: 0.7rem 0;
+            text-align: center;
+            width: 100%;
+            color: white;
+            background-color: $black;
+            transition: $trans-3;
+            border-radius: 0 0 5px 5px;
+        }
+        a:hover{
+            background-color: $second-color;
+        }
+    }
+}
