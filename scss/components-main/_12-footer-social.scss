@@ -16,4 +16,17 @@
     i:hover{
         color: $second-color;
     }
+
+    
+@include mq("sm"){
+        
+}
+
+@include mq("md"){
+    display: none;
+}
+
+@include mq("lg"){
+    
+}
 }

@@ -36,4 +36,51 @@
         }
         
     }
+
+    @include mq("sm"){
+
+        .container{
+            
+            .card{
+                
+
+                p{
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    @include mq("md"){
+
+        .container{
+            margin: 0 auto;
+            max-width: 800px;
+            grid-template-columns: 1fr 1fr 1fr;
+            .card{
+                height: 240px;
+                h3{
+                    font-size: $font-3;
+                }
+                h3:last-of-type{
+                    padding: 0.3rem;
+                }
+
+                p{
+                    font-size: $font-4;
+                    width: 180px;
+                }
+            }
+        }
+    }
+
+    @include mq("lg"){
+
+        .container{
+            max-width: 1100px;
+            .card{
+                
+            }
+        }
+    }
 }

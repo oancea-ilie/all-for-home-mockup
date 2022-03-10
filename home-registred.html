@@ -21,19 +21,21 @@
 <body>
     
         <header class="header-home">
-            <a href="index.html" class="brand"><img src="img/logo.png" alt=""></a>
-
-            <div class="icons">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="nav">
-                <a href="index.html">HOME</a>
-                <a href="recipes.html">RECIPES</a>
-                <a href="#">PROGRAMS</a>
-                <a href="#">ABOUT US</a>
-                <a href="register.html" class="link">Log Out</a>
+            <div class="header-home-container">
+                <a href="index.html" class="brand"><img src="img/logo.png" alt=""></a>
+                <div class="home-nav">
+                    <a href="index.html">HOME</a>
+                    <a href="recipes.html">RECIPES</a>
+                    <a href="#">PROGRAMS</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#" class="user-details"><i class="far fa-user"></i></a>
+                    <a href="register.html" class="link register-btn">Log Out</a>
+                </div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-user"></i>
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </header>
 
@@ -48,7 +50,7 @@
             </div>
 
             <div class="home-why-us">
-                <div class="col">
+                <div class="col mr-1">
                     <i class="fab fa-facebook"></i>
                     <p>DISCOUND 40% FOR FIRST ORDER</p>
                 </div>
@@ -56,7 +58,7 @@
                     <i class="fab fa-facebook"></i>
                     <p>6-DAY RETURNS MONEY BACK</p>
                 </div>
-                <div class="col">
+                <div class="col mr-2">
                     <i class="fab fa-facebook"></i>
                     <p>24/7 SUPPORT</p>
                 </div>
@@ -65,81 +67,113 @@
             <div class="home-view-recipes">
                 <h1>VIEW RECIPIES</h1>
 
-                <div class="card">
-                    <img src="./img/desert.png" alt="">
-                    <p>Food recipes</p>
-                </div>
-                <div class="card">
-                    <img src="./img/desert.png" alt="">
-                    <p>Drinks recipes</p>
+                <div class="container">
+                    <div class="card">
+                        <img src="./img/desert.png" alt="">
+                        <p>Food recipes</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/desert.png" alt="">
+                        <p>Drinks recipes</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/desert.png" alt="">
+                        <p>Premium Food</p>
+                    </div>
+                    <div class="card last-card">
+                        <img src="./img/desert.png" alt="">
+                        <p>Premium Drinks</p>
+                    </div>
+                    <div class="card last-card2">
+                        <img src="./img/desert.png" alt="">
+                        <p>Premium Drinks</p>
+                    </div>
                 </div>
             </div>
 
             <div class="home-top-categories">
                 <h1>TOP CATEGORIES</h1>
 
-                <div class="card">
-                    <img src="./img/meat.png" alt="">
-                    <p>Meet</p>
-                </div>
-                <div class="card">
-                    <img src="./img/meat.png" alt="">
-                    <p>Deserts</p>
-                </div>
-                <div class="card">
-                    <img src="./img/meat.png" alt="">
-                    <p>Sugar Free</p>
-                </div>
-            </div>
-
-            <div class="home-last-orders">
-                <h1>Last Order</h1>
-                <div class="card">
-                    <i class="fas fa-check"></i>
-                    <p>Program Popular</p>
-                </div>
-            </div>
-
-            <div class="home-calculator">
-                <h1>Calculate your BMI</h1>
-                
-                <form>
-                    <p>Age:</p> <input type="number" class="number" placeholder="age">
-                    <p>Gender:</p>
-                    <input type="radio" name="gender" class="gender"><p class="p-gender">Male</p> 
-                    <input type="radio" name="gender" class="gender-2"><p class="p-gender">Female</p> 
-                    <p>Height:</p> <input type="number" class="number" placeholder="cm">
-                    <p>Weight:</p> <input type="number" class="number" placeholder="kg">
-                    <a href="#" class="link">Calculate</a>
-                </form>
-            </div>
-
-            <div class="home-select-program">
-                <h1>Select Program</h1>
-
-                <div class="card">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fuga quo quod commodi molestias culpa.</p>
-                    <a href="#" class="link">View Programs</a>
-                </div>
-            </div>
-
-            <div class="home-select-goal">
-                <h1>Select Your Goal</h1>
-                
                 <div class="container">
-                    <div class="goal">
-                        <i class="fas fa-weight"></i>
-                        <p>Weight Loss</p>
+                    <div class="card">
+                        <img src="./img/meat.png" alt="">
+                        <p>Meet</p>
                     </div>
-                    <div class="goal">
-                        <i class="fas fa-universal-access"></i>
-                        <p>Normal</p>
+                    <div class="card">
+                        <img src="./img/meat.png" alt="">
+                        <p>Deserts</p>
                     </div>
-                    <div class="goal">
-                        <i class="fas fa-weight-hanging"></i>
-                        <p>Gain Muscle</p>
+                    <div class="card">
+                        <img src="./img/meat.png" alt="">
+                        <p>Sugar Free</p>
+                    </div>
+                    <div class="card last-card">
+                        <img src="./img/meat.png" alt="">
+                        <p>Premium</p>
+                    </div>
+                    <div class="card last-card2">
+                        <img src="./img/meat.png" alt="">
+                        <p>Premium2</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="last-order-and-calculator">
+
+                <div class="home-last-orders">
+                    <h1>Last Order</h1>
+                    <div class="card">
+                        <i class="fas fa-check"></i>
+                        <p>Program Popular</p>
+                    </div>
+                </div>
+    
+                <div class="home-calculator">
+                    <h1>Calculate your BMI</h1>
+                    
+                    <form>
+                        <p>Age:</p> <input type="number" class="number" placeholder="age">
+                        <p>Gender:</p>
+                        <input type="radio" name="gender" class="gender"><p class="p-gender">Male</p> 
+                        <input type="radio" name="gender" class="gender-2"><p class="p-gender">Female</p> 
+                        <p>Height:</p> <input type="number" class="number" placeholder="cm">
+                        <p>Weight:</p> <input type="number" class="number" placeholder="kg">
+                        <a href="#" class="link">Calculate</a>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="select-program-and-goal">
+                
+                <div class="home-select-program">
+                    <h1>Select Program</h1>
+    
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fuga quo quod commodi molestias culpa.</p>
+                        <a href="#" class="link">View Programs</a>
+                    </div>
+                </div>
+    
+                <div class="home-select-goal">
+                    <h1>Select Your Goal</h1>
+                    
+                    <div class="container">
+                        <div class="goal">
+                            <i class="fas fa-weight"></i>
+                            <p>Weight Loss</p>
+                        </div>
+                        <div class="goal">
+                            <i class="fas fa-universal-access"></i>
+                            <p>Normal</p>
+                        </div>
+                        <div class="goal">
+                            <i class="fas fa-weight-hanging"></i>
+                            <p>Gain Muscle</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </main>

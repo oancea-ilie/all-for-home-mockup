@@ -1,4 +1,40 @@
 .footer-header{
     padding: 0.4rem 0.5rem;
     border-bottom: 1px solid white;
+    .social{
+        display: none;
+    }
+
+    @include mq("sm"){
+        a{
+            margin-left: 1.5rem;
+        }
+    }
+
+    @include mq("md"){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+        .social{
+            margin-top: 0.3rem;
+            margin-right: 1.5rem;
+            display: flex;
+
+            i{
+                font-size: 1.4rem;
+                margin-right: 0.5rem;
+                cursor: pointer;
+                transition: $trans-3;
+            }
+            i:hover{
+                color: $second-color;
+            }
+        }
+    }
+
+    @include mq("lg"){
+        max-width: 1100px;
+    }
 }

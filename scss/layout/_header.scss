@@ -1,53 +1,73 @@
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: $space-light $space-0;
-    border-bottom: 1px solid rgba(78, 78, 78, 0.109);
-    background-color: rgb(255, 255, 255);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
-    box-shadow: $shadow-b;
+    .header-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $space-light $space-0;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        border-bottom: 1px solid rgba(78, 78, 78, 0.109);
+        box-shadow: $shadow-b;
 
-    .fa-bars{
-        margin-top: 0.5rem;
-        cursor: pointer;
-        color: $first-color;
-        margin-right: 0.7rem;
-        font-size: $font-2;
-        transition: $trans-3;
-    }
-    .fa-bars:hover{
-        color: $second-color;
-    }
+        .fa-bars{
+            margin-top: 0.5rem;
+            cursor: pointer;
+            color: $first-color;
+            margin-right: 0.7rem;
+            font-size: $font-2;
+            transition: $trans-3;
+        }
+        .fa-bars:hover{
+            color: $second-color;
+        }
 
-    .fa-times{
-        margin-top: 0.5rem;
-        margin-right: 0.7rem;
-        cursor: pointer;
-        color: $first-color;
-        font-size: $font-2;
-        transition: $trans-3;
-    }
-    .fa-times:hover{
-        color: $second-color;
-    }
-    
-
-    @include mq("md"){
-        
-        padding: 0.3rem 1.5rem;
-        .brand{
-            width: 100%;
+        .fa-times{
+            margin-top: 0.5rem;
+            margin-right: 0.7rem;
+            cursor: pointer;
+            color: $first-color;
+            font-size: $font-2;
+            transition: $trans-3;
+        }
+        .fa-times:hover{
+            color: $second-color;
         }
         
-        .icons{
 
-            i{
+    }
+
+
+    @include mq("md"){
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-bottom: 1px solid rgba(78, 78, 78, 0.109);
+        box-shadow: $shadow-b;
+        z-index: 1;
+        .header-container{
+            max-width: 800px;
+            padding: 0.3rem 1.5rem;
+            box-shadow: none;
+            border: none;
+            .brand{
+                width: 100%;
+            }
+
+            .fa-bars{
                 display: none;
             }
+
+        }
+    }
+
+    @include mq("lg"){
+
+
+        .header-container{
+            max-width: 1150px;
         }
     }
 

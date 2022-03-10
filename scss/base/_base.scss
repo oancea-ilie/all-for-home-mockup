@@ -77,4 +77,26 @@
         margin: 0 auto;
         margin-bottom: $space-3;
     }
+
+    @include mq("md"){
+        .sub-title{
+            font-size: 1.7rem;
+            margin: 2.5rem 0;
+            margin-bottom: $space-0;
+        }
+        .border-bottom{
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include mq("lg"){
+        .sub-title{
+            font-size: 1.9rem;
+            margin: 3rem 0;
+            margin-bottom: $space-0;
+        }
+        .border-bottom{
+            margin-bottom: 2.5rem;
+        }
+    }
 }

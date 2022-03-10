@@ -35,4 +35,27 @@
             padding-top: 0;
         }
     }
+
+
+    @include mq("sm"){
+
+        .container{
+            margin: 0 auto;
+            max-width: 400px;
+        }
+    }
+
+    @include mq("md"){
+
+        .container{
+            
+        }
+    }
+
+    @include mq("lg"){
+
+        .container{
+            
+        }
+    }
 }

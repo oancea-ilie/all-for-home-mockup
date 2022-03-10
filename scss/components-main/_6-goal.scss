@@ -33,4 +33,38 @@
             background-color: white;
         }
     }
+
+
+    @include mq("sm"){
+
+        .container{
+            .card{
+                margin: 0 auto;
+                width: 400px;
+            }
+        }
+    }
+
+    @include mq("md"){
+
+        .container{
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 800px;
+            padding-bottom: 3rem;
+            margin: 0 auto;
+            .card{
+                width: 216px;
+            }
+        }
+    }
+
+    @include mq("lg"){
+
+        .container{
+            max-width: 1100px;
+            .card{
+                width: 300px;
+            }
+        }
+    }
 }

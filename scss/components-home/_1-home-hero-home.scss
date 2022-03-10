@@ -3,39 +3,106 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.hero-home{
-    background-color: rgba(0, 0, 0, 0.438);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: $space-3 $space-2;
-    padding-bottom: $space-3;
-    margin-top: 4.7rem;
-    h1{
-        line-height: 1.9rem;
-        font-size: $font-2;
-
-        .discount{
-            color: $first-color;
-        }
-        span{
+    transition: 3s background;
+    .hero-home{
+        background-color: #00000078;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: $space-3 $space-2;
+        padding-bottom: $space-3;
+        h1{
+            line-height: 1.9rem;
             font-size: $font-2;
+            .discount{
+                color: $first-color;
+            }
+            span{
+                font-size: $font-2;
+            }
+        }
+        p{
+            font-size: $font-4;
+            line-height: 1.4rem;
+            margin-top: $space-0;
+            width: 220px !important;
+            // background-color: red;
+        }
+    
+        a{
+            transition: $trans-3;
+            font-weight: 300;
+            margin-top: $space-1;
+            text-align: center;
+            width: 150px !important;
+            padding: $space-0 0;
         }
     }
-    p{
-        font-size: $font-4;
-        line-height: 1.4rem;
-        margin-top: $space-0;
-        width: 220px;
+
+
+    
+    @include mq("sm"){
+        .hero-home{
+            width: 70%;
+            margin: 0 auto;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+        }
     }
 
-    a{
-        transition: $trans-3;
-        font-weight: 300;
-        margin-top: $space-1;
-        text-align: center;
-        width: 130px;
-        padding: $space-0 0;
+    @include mq("md"){
+        height: 350px;
+        background-attachment: fixed;
+        .hero-home{
+            height: 350px;
+            max-width: 450px;
+            h1{
+                font-size: 2rem;
+                line-height: 2.5rem;
+                font-weight: 400;
+                span{
+                    font-weight: 400;
+                    font-size: inherit;
+                }
+            }
+            p{
+                width: 270px;
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+            }
+            a{
+                padding: 0.7rem 0;
+                font-size: 1.4rem;
+                width: 200px;
+            }
+        }
+    }
+
+    @include mq("lg"){
+        height: 500px;
+        .hero-home{
+            height: 500px;
+            max-width: 500px;
+            justify-content: center;
+            padding-left: 3rem;
+            h1{
+                font-size: $font-1;
+                line-height: 3.2rem;
+                span{
+                    font-size: $font-1;
+                }
+            }
+            p{
+                text-align: start;
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+            a{
+                width: 220px !important;
+                font-size: $font-2;
+                margin-right: auto;
+            }
+        }
     }
 }

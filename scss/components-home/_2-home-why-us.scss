@@ -1,23 +1,24 @@
 .home-why-us{
     border: $border-light;
     margin: 2rem 1rem;
-    background-color: white;
+    display: grid;
 
     .col{
         border-bottom: $border-light;
-        padding: 1.3rem;
+        padding: 0.8rem;
         display: flex;
         align-items: center;
-
+        background-color: white;
         i{
             color: $first-color;
             font-size: 1.8rem;
             margin-right: 1rem;
+            margin-left: 0.5rem;
         }
 
         p{
             color: $black;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 500;
         }
     }
@@ -25,4 +26,28 @@
         border: none;
     }
     
+
+    @include mq("md"){
+        border: $border-light;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 800px;
+        margin: 2rem auto;
+        border: none;
+        .col{
+            border: $border-light;
+        }
+        .col:last-of-type{
+            border:  $border-light;
+        }
+        .mr-1{
+            margin-left: 1rem;
+        }
+        .mr-2{
+            margin-right: 1rem;
+        }
+    }
+
+    @include mq("lg"){
+        max-width: 1100px ;
+    }
 }

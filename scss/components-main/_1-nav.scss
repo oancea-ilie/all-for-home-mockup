@@ -9,6 +9,7 @@
     padding: 0;
     width: 100%;
     padding-top: 1rem;
+    z-index: 99;
     a{
         color: $black;
         display: block;
@@ -16,6 +17,7 @@
         text-align: center;
         transition: $trans-3;
     }
+
     a:hover{
         color: $second-color;
     }
@@ -34,6 +36,7 @@
         align-items: center;
         display: flex;
         justify-content: flex-end;
+        right: 0;
         margin: 0;
         padding: 0;
         gap: 1rem;
@@ -41,9 +44,22 @@
             font-size: $font-5;
             padding: 0;
         }
-        a:last-of-type{
-            padding: 0.5rem 1.5rem;
-            margin-right: 0.5rem;
+        .register-btn{
+            padding: 0.3rem 1.5rem !important;
+            background-color: transparent;
+            color: $first-color !important;
+            border: 2px solid $first-color;
+        }
+        .register-btn:hover{
+            background-color: $first-color;
+            color: white !important;
+        }
+    }
+
+    @include mq("lg"){
+
+        .register-btn{
+            padding: 0.3rem 2rem !important;
         }
     }
 }

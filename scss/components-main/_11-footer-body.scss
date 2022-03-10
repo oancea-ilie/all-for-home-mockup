@@ -25,4 +25,24 @@
             }
             
         }
+
+    @include mq("sm"){
+        justify-items: center;
+        .col{
+            width: 130px;
+        }
+    }
+
+    @include mq("md"){
+        max-width: 800px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        border-bottom: none;
+    }
+
+    @include mq("lg"){
+        max-width: 1100px;
+        margin: 0 auto;
+    }
 }

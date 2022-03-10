@@ -111,4 +111,37 @@
             }
         }
     }
+
+    @include mq("sm"){
+
+        .container{
+            max-width: 400px;
+            margin: 0 auto;
+            .card{
+
+                a{
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+
+    @include mq("md"){
+
+        .container{
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 800px;
+            padding-bottom: 3rem;
+        }
+    }
+
+    @include mq("lg"){
+
+        .container{
+            max-width: 1100px;
+            .card{
+                
+            }
+        }
+    }
 }

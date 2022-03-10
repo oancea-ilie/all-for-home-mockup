@@ -54,4 +54,57 @@
             }
         }
     }
+
+
+    @include mq("sm"){
+        .team-descriere{
+            width: 400px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .container{
+
+            justify-items: center;
+            .card{
+                width: 350px;
+                h3{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    @include mq("md"){
+
+        .container{
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 800px;
+            padding-bottom: 3rem;
+            margin: 0 auto;
+            justify-items: normal;
+            .card{
+                width: auto;
+            }
+        }
+    }
+
+    @include mq("lg"){
+
+        .team-descriere{
+            width: 800px;
+            font-size: 1.2rem;
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 1100px;
+            .card{
+                
+            }
+        }
+    }
 }
