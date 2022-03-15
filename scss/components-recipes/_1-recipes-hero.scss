@@ -1,20 +1,14 @@
 .recipes-hero{
-    margin-top: 4.7rem;
-    height: 200px;
+    height: 300px;
     background-image: url(../img/recipes-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    h1{
-        margin:0;
-        width: 100%;
-        font-size: $font-2;
-        background-color: #58b8208f;
-        padding: 0.5rem 0;
+
+    @include mq("md"){
+        height: 400px;
+    }
+    @include mq("lg"){
+        height: 500px;
     }
 }

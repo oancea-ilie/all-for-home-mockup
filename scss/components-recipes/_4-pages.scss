@@ -1,28 +1,61 @@
 .pages{
-    margin: 0 1rem;
-    box-shadow: $shadow-b;
-    margin-top: 2rem;
-    display: flex;
-    background-color: white;
-    text-align: center;
-    justify-content: center;
-    padding: 1rem 0;
-    a{
-        margin-right: 0.5rem;
-        padding: 0.4rem 0.7rem;
-        border-radius: 3px;
-        background-color: $black;
-        color: white;
-        font-size: $font-5;
-        transition: $trans-3;
+
+    .container{
+        background-color: white;
+        margin: 0 1rem;
+        box-shadow: $shadow-b;
+        margin-top: 2rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 1rem 0;
+        border-radius: 5px;
+
+        a{
+            margin-right: 0.5rem;
+            padding: 0.4rem 0.7rem;
+            border-radius: 3px;
+            background-color: $black;
+            color: white;
+            font-size: $font-5;
+            transition: $trans-3;
+        }
+        a:hover{
+            background-color: $first-color;
+        }
+        .active{
+            background-color: $first-color;
+        }
+        a:last-of-type{
+            margin-right: 0;
+        
+        }
     }
-    a:hover{
-        background-color: $first-color;
+
+    @include mq("sm"){
+        margin: 0 1rem;
+        .container{
+            max-width: 400px;
+            margin: 2rem auto;
+        }
     }
-    .active{
-        background-color: $first-color;
+    @include mq("md-6"){
+        margin: 0;
+        .container{
+            max-width: none;
+            margin: 2rem 1rem;
+        }
     }
-    a:last-of-type{
-        margin-right: 0;
+    @include mq("md"){
+        margin: 0 1rem;
+        .container{
+            max-width: 770px;
+            margin: 2rem auto;
+        }
+    }
+    @include mq("lg"){
+        .container{
+            max-width: 970px;
+        }
     }
 }

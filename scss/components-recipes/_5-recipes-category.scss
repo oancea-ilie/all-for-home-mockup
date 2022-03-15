@@ -1,33 +1,58 @@
 .recipes-category{
-    margin: 0 1rem;
-    box-shadow: $shadow-b;
-    margin-top: 2rem;
-    background-color: white;
-    padding: 1.5rem;
+
+    .container{
+        margin: 0 1rem;
+        box-shadow: $shadow-b;
+        margin-top: 2rem;
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 5px;
+        h2{
+            color: $black;
+            font-weight: 400;
+            font-size: $font-3;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .categories{
+            margin-top: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr;
     
-    h2{
-        color: $black;
-        font-weight: 400;
-        font-size: $font-3;
-        padding-bottom: 0.4rem;
-        border-bottom: 1px solid #e0e0e0;
-    }
-    .categories{
-        margin-top: 1.5rem;
-        display: grid;
-        grid-template-columns: 1fr;
-
-        .flex{
-            display: flex;
-            align-items: center;
-            padding-bottom: 0.7rem;
-
-            input{
-                margin-right: 0.5rem;
-            }
-            p{
-                font-size: $font-5;
+            .flex{
+                display: flex;
+                align-items: center;
+                padding-bottom: 0.7rem;
+    
+                input{
+                    margin-right: 0.5rem;
+                }
+                p{
+                    font-size: $font-5;
+                }
             }
         }
+    }
+
+    @include mq("sm"){
+        margin: 0 1rem;
+        .container{
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+    @include mq("md-6"){
+        margin: 0;
+        .container{
+            height: 270px;
+            max-width: none;
+            margin: 0;
+        }
+    }
+    @include mq("md"){
+        margin-left: 1rem;
+    }
+    @include mq("lg"){
+        
     }
 }

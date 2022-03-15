@@ -56,6 +56,9 @@
     h3, h4, h5, h6, p, span, a, button, input{
         font-size: $font-4;
     }
+
+    
+    // facute special
     .sub-title{
         font-weight: 400;
         font-size: $font-3;
@@ -64,8 +67,6 @@
         text-align: center;
     }
 
-
-    // facute special
     .border{
         border-bottom: 1px solid rgba(78, 78, 78, 0.109);
     }

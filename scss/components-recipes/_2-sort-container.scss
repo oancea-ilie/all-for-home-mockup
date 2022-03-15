@@ -15,4 +15,24 @@
         padding: 0.4rem;
         outline: none;
     }
+
+    @include mq("sm"){
+        margin: 2rem auto;
+        max-width: 400px;
+    }
+    @include mq("md-6"){
+        max-width: none;
+        margin: 2rem 1rem;
+    }
+    @include mq("md"){
+        max-width: 800px;
+        margin: 2rem auto;
+        p{
+            margin-left: 1rem;
+        }
+
+    }
+    @include mq("lg"){
+        max-width: 1000px;
+    }
 }

@@ -1,27 +1,28 @@
 .about-vision{
     margin: 0 1rem;
     margin-top: 2rem;
-    img{
-        border-radius: 5px;
-        box-shadow: $shadow-b;
-        margin-bottom: 1rem;
-    }
 
     h1{
-        text-transform:uppercase;
-        text-align: start;
+        text-align: center;
         margin: 0;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 1.7rem;
         margin-bottom: 1rem;
-        color: $first-color;
+        color: $black;
+        margin-bottom: 2rem;
+    }
+
+    .store{
+        text-align: center;
+        margin-bottom: 2rem;
+        line-height: 2rem;
     }
 
     .container{
         display: grid;
         grid-template-columns: 1fr;
         .flex{
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             box-shadow: $shadow-b;
             h2{
                 font-size: 1.3rem;
@@ -33,11 +34,46 @@
             }
 
             p{
+                text-align: start;
                 line-height: 1.7rem;
                 font-size: 1rem;
-                padding: 0.7rem;
+                padding: 1.2rem;
                 border: $border-light;
             }
+        }
+    }
+
+    @include mq("sm"){
+        .store{
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+    
+        .container{
+            max-width: 450px;
+            margin: 0 auto;
+        }
+    }
+
+    @include mq("md-6"){
+        .container{
+            max-width: 800px;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.5rem;
+        }
+    }
+
+    @include mq("lg"){
+        h1{
+            margin: 3rem 0;
+        }
+        .store{
+            max-width: 1000px;
+        }
+        .container{
+            max-width: 1000px;
+
         }
     }
 }
