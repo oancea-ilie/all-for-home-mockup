@@ -1,10 +1,11 @@
 .programs{
-    margin: 2rem 1rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
-
+    max-width: 500px;
+    margin: 4rem auto;
     .card{
+        margin: 0 1rem;
         cursor: pointer;
         border: 1px solid $first-color;
         display: flex;
@@ -14,12 +15,15 @@
         background-color: white;
         
         h3{
+            text-align: center;
             padding: 2rem 0;
         }
         h1{
+            text-align: center;
             color: $first-color;
         }
         h4{
+            text-align: center;
             color: $first-color;
             font-weight: 400;
         }
@@ -28,6 +32,7 @@
             width: 100%;
             margin: 0;
             text-align: center;
+            margin-top: auto;
         }
         .premium{
 
@@ -107,5 +112,28 @@
         a{
             background-color: $second-color;
         }
+    }
+
+    @include mq("md"){
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "card1 card2"
+                             "card3 card3";
+        max-width: 800px;
+
+        .card1{
+            grid-area: card1;
+        }
+        .polular-card{
+            grid-area: card2;
+        }
+        .card3{
+            grid-area: card3;
+        }
+
+    }
+    @include mq("lg"){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "card1 card2 card3";
+        max-width: 1200px;
     }
 }

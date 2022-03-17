@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product View</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favorite</title>
 
-    <!-- google fond -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    
-    <!-- css link -->
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>"/>
+        <!-- google fond -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        
+        <!-- css link -->
+        <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>"/>
 
-</head>
-<body>
+    </head>
 
-    <div class="wrapper-recipes">
+    <body>
 
         <header class="header-home">
             <div class="header-home-container">
@@ -46,40 +45,18 @@
             </div>
         </header>
 
-        <section class="product-container">
+        <main class="main-contanct">
+
+            <section class="hero">
+                <h1>Contact</h1>
+            </section>
+
             
-            <div class="card">
-                <img src="./img/recipes/break-1.jfif" alt="breakfast">
-                
-                <div class="text">
-                    <h2>Turkey Filled Omelette</h2>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ad voluptatum labore numquam adipisci molestias distinctio officia commodi id temporibus.</p>
-                    <a href="#" class="select-plan">SELECT PLAN</a>
-                </div>
-                <div class="recomandari">
-                    <div class="meal-flex">
-                        <p class="meal">MEAL:</p>
-                        <a href="#" class="tag">breakfast</a>
-                    </div>
-                    <div class="category-flex">
-                        <h3>CATEGORY: <span>Eggs</span></h3>
-                    </div>
-                    <div class="goal-flex">
-                        <h3>GOAL:<span>Gain Muscle</span></h3>
-                    </div>
-                    <div class="calory-flex">
-                        <h3>Calories: <span>578 kcal</span></h3>
-                    </div>
-                </div>
-             </div>
 
-            <div class="calory-raport">
-                 <canvas class="calory-chart"></canvas>
-            </div>
-        </section>
+        </main>
 
- 
         <footer>
+
             <div class="footer-header">
                 <a href="#" class="brand"><img src="./img/logo-white.png" alt=""></a>
             </div>
@@ -120,13 +97,7 @@
             </div>
         </footer>
 
-    </div>
-    
-<!-- Chart -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<!-- JS -->
-<script src="js/chart.js"></script>
-<script src="js/main.js"></script>
-</body>
+        <!-- JS -->
+        <script src="js/main.js"></script>
+    </body>
 </html>

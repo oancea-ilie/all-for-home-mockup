@@ -6,19 +6,24 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: $space-light 0;
+        padding: 0.6rem 0;
         background-color: rgb(255, 255, 255);
         width: 100%;
         border-bottom: 1px solid rgba(78, 78, 78, 0.109);
         box-shadow: $shadow-b;
+        .brand{
 
+            img{
+                width: 170px;
+            }
+        }
         .icons{
             .fa-bars{
                 margin-top: 0.5rem;
                 cursor: pointer;
                 color: $first-color;
                 margin-right: 0.7rem;
-                font-size: $font-2;
+                font-size: 1.4rem;
                 transition: $trans-3;
             }
             .fa-bars:hover{
@@ -30,7 +35,7 @@
                 margin-right: 0.7rem;
                 cursor: pointer;
                 color: $first-color;
-                font-size: $font-2;
+                font-size: 1.4rem;
                 transition: $trans-3;
             }
             .fa-times:hover{
@@ -41,10 +46,21 @@
                 margin-right: 0.3rem;
                 cursor: pointer;
                 color: $first-color;
-                font-size: $font-2;
+                font-size: 1.4rem;
                 transition: $trans-3;
             }
             .fa-user:hover{
+                color: $second-color;
+            }
+
+            .fa-shopping-cart{
+                margin-right: 0.5rem;
+                cursor: pointer;
+                color: $first-color;
+                font-size: 1.4rem;
+                transition: $trans-3;
+            }
+            .fa-shopping-cart:hover{
                 color: $second-color;
             }
         
@@ -52,7 +68,7 @@
                 margin-right: 0.3rem;
                 cursor: pointer;
                 color: $first-color;
-                font-size: $font-2;
+                font-size: 1.4rem;
                 transition: $trans-3;
             }
             .fa-heart:hover{
@@ -64,7 +80,11 @@
     @include mq("sm"){
 
         .header-home-container{
-            
+            .brand{
+                img{
+                    min-width: 200px;
+                }
+            }
             .icons{
                 i{
                     margin-right: 0.5rem !important;
@@ -84,12 +104,9 @@
         z-index: 1;
         .header-home-container{
             max-width: 800px;
-            padding: 0.3rem 1.5rem;
+            padding: 0.5rem;
             box-shadow: none;
             border: none;
-            .brand{
-                width: 100%;
-            }
 
             .fa-bars{
                 display: none;

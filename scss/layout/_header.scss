@@ -12,6 +12,12 @@ header{
         border-bottom: 1px solid rgba(78, 78, 78, 0.109);
         box-shadow: $shadow-b;
 
+        .brand{
+
+            img{
+                width: 100%;
+            }
+        }
         .fa-bars{
             margin-top: 0.5rem;
             cursor: pointer;
@@ -49,13 +55,14 @@ header{
         z-index: 1;
         .header-container{
             max-width: 800px;
-            padding: 0.3rem 1.5rem;
+            padding: 0.5rem ;
             box-shadow: none;
             border: none;
             .brand{
-                width: 100%;
+                img{
+                    min-width: 200px;
+                }
             }
-
             .fa-bars{
                 display: none;
             }

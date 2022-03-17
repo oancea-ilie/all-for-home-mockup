@@ -1,27 +1,36 @@
 .recommendation{
     margin: 0 1rem;
-    box-shadow: $shadow-b;
-    background-color: white;
-    padding: 1.5rem 0;
-    
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
     h2{
         text-align: center;
         color: $black;
         font-weight: 400;
         font-size: $font-3;
         padding-bottom: 0.4rem;
-        border-bottom: 1px solid #e0e0e0;
-        margin: 0 1.5rem;
+        background-color: white;
+        margin: 0 1rem;
+        padding: 1.2rem 0;
+        margin-bottom: 0.3rem;
+        box-shadow: $shadow-b;
     }
 
     .container{
-        padding: 0 1.5rem;
-        
+        border-top: 1px solid #e0e0e0;
+        background-color: white;
+        padding: 0.5rem 0;
+        padding-bottom: 2rem;
+        margin: 0 1rem;
+        box-shadow: $shadow-b;
         .flex{
-            display: grid;
-            grid-template-columns: 1fr;
-            justify-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
             margin-top: 1.5rem;
+            width: 300px;
             i{
                 display: flex;
                 justify-content: center;
@@ -47,4 +56,21 @@
         }
     }
 
+
+    @include mq("md"){
+        max-width: 800px;
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .flex{
+                width: auto;
+                padding: 0.5rem 1.5rem;
+            }
+        }
+    }
+
+    @include mq("lg"){
+        max-width: 1200px;
+    }
 }

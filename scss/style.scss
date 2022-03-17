@@ -22,7 +22,8 @@
 'layout/main-product-view',
 'layout/main-home',
 'layout/main-programs',
-'layout/main-about';
+'layout/main-about',
+'layout/main-favorite';
 
 // main components
 @import
@@ -81,3 +82,8 @@
 @import 
 'components-cart/1-steps',
 'components-cart/2-cart-select-recipes';
+
+// favorite
+@import
+'components-favorite/1-hero',
+'components-favorite/2-favorite-container';

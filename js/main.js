@@ -34,7 +34,8 @@ bar.addEventListener('click',()=>{
     }
 });
 
-window.addEventListener('resize',()=>{
+
+let corectie =()=>{
     if(window.innerWidth >=768){
         if(nav){
             nav.style.right = '0';
@@ -44,6 +45,9 @@ window.addEventListener('resize',()=>{
             homeNav.style.right = '0';
             homeNav.style.opacity = '1';
         }
+        bar.classList.remove('fa-times');
+        bar.classList.add('fa-bars');
+        console.log('test');
     }else{
         if(nav){
             nav.style.right = '-100%';
@@ -55,7 +59,9 @@ window.addEventListener('resize',()=>{
         }
         
     }
-});
+}
+corectie();
+window.addEventListener('resize',corectie);
 
 
 let heroWrapper = document.querySelector(".hero-wrapper");
